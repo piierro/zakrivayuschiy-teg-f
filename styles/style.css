@@ -147,6 +147,10 @@
   filter: grayscale(0.8);
 }
 
+.filter-eight {
+  filter:sepia(40%);
+}
+
 .card__img {
   width: 100%;
   display: block;
