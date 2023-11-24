@@ -1,6 +1,335 @@
-/* В этом файле вы опишете значения переменных в разных цветовых схемах.
-Придерживайтесь такого именования классов:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
-*/
+:root .theme-dark {
+  --themes-background__dark: #000;
+  --themes-main-color__dark: #00cc14;
+  --wdth: 785;
+  --wdth-text: 465;
+  background-image: repeating-linear-gradient(
+      to left,
+      #000 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #007f0c 00.01%, #004306);
+}
+
+.theme-dark .page {
+  --themes-background__dark: #000;
+  --themes-main-color__dark: #00cc14;
+  --wdth: 785;
+  --wdth-text: 465;
+  background-image: repeating-linear-gradient(
+      to left,
+      #000 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #007f0c 00.01%, #004306);
+}
+
+.theme-dark .header__content {
+  border: 2px solid var(--themes-main-color__dark, #00cc14);
+  background: var(--themes-background__dark, #000);
+}
+
+.theme-dark .header__title {
+  color: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .header__subtitle {
+  color: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .theme-menu__button {
+  color: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .card {
+  border: 2px solid var(--themes-main-color__dark, #00cc14);
+  background: var(--themes-background__dark, #000);
+}
+
+.theme-dark .content__card {
+  border-top: 2px solid var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .card__title {
+  font-variation-settings: var(--wdth);
+  color: var(--themes-main-color__dark, #00cc14);
+  border-bottom: 2px solid var(--themes-main-color__dark, #00cc14);
+  line-height: 125%;
+}
+
+.theme-dark .button__text {
+  color: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .card__text {
+  color: var(--themes-main-color__dark, #00cc14);
+  font-variation-settings: var(--wdth-text);
+}
+
+.theme-dark .card__like-button {
+  border: 2px solid var(--themes-main-color__dark, #00cc14);
+  background: var(--themes-background__dark, #000);
+}
+
+.theme-dark .floppy__btn {
+  border: 2px solid var(--themes-main-color__dark, #00cc14);
+  background: var(--themes-background__dark, #000);
+}
+
+.theme-dark .floppy {
+  color: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .label {
+  -webkit-text-stroke: 1px #000;
+  color: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .contour {
+  fill: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .card__like-button:hover .button__text {
+  color: var(--themes-background__dark, #000);
+}
+
+.theme-dark .card__like-button::after {
+  background: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .card__like-button:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .like-icon:hover .core {
+  fill: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .like-icon.is-liked .core {
+  fill: var(--name-sparks, #ff0000);
+}
+
+.theme-dark .like-icon:hover .main-body {
+  fill: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .like-icon.is-liked .main-body {
+  fill: var(--name-sparks, #ff0000);
+}
+
+.theme-dark .floppy__btn:hover .floppy {
+  color: var(--themes-background__dark, #000);
+}
+
+.theme-dark .floppy__btn:hover span {
+  color: var(--themes-background__dark, #000);
+}
+
+.theme-dark .floppy__btn::after {
+  background: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .floppy__btn:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .modal {
+  border: 2px solid var(--themes-main-color__dark, #00cc14);
+  background: var(--themes-background__dark, #000);
+}
+
+.theme-dark .modal__block {
+  color: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .text {
+  color: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .button__ok {
+  color: var(--themes-main-color__dark, #00cc14);
+  border: 2px solid var(--themes-main-color__dark, #00cc14);
+  background: var(--themes-background__dark, #000);
+}
+
+.theme-dark .button__ok:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .card__icon-button:focus-visible {
+  outline: 2px solid var(--themes-main-color__dark, #00cc14);
+}
+
+@media (width <= 375px) {
+  .theme-dark .card__title {
+    line-height: inherit;
+  }
+
+  .theme-dark .card__text {
+    line-height: 21.5px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .theme-auto .page {
+    --themes-background__dark: #000;
+    --themes-main-color__dark: #00cc14;
+    --wdth: 785;
+    --wdth-text: 465;
+    background-image: repeating-linear-gradient(
+        to left,
+        #000 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+      linear-gradient(to bottom, #007f0c 00.01%, #004306);
+  }
+
+  .theme-auto .header__content {
+    border: 2px solid var(--themes-main-color__dark, #00cc14);
+    background: var(--themes-background__dark, #000);
+  }
+
+  .theme-auto .header__title {
+    color: var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .header__subtitle {
+    color: var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .theme-menu__button {
+    color: var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .card {
+    border: 2px solid var(--themes-main-color__dark, #00cc14);
+    background: var(--themes-background__dark, #000);
+  }
+
+  .theme-auto .content__card {
+    border-top: 2px solid var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .card__title {
+    font-variation-settings: var(--wdth);
+    color: var(--themes-main-color__dark, #00cc14);
+    border-bottom: 2px solid var(--themes-main-color__dark, #00cc14);
+    line-height: 125%;
+  }
+
+  .theme-auto .button__text {
+    color: var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .card__text {
+    color: var(--themes-main-color__dark, #00cc14);
+    font-variation-settings: var(--wdth-text);
+  }
+
+  .theme-auto .card__like-button {
+    border: 2px solid var(--themes-main-color__dark, #00cc14);
+    background: var(--themes-background__dark, #000);
+  }
+
+  .theme-auto .floppy__btn {
+    border: 2px solid var(--themes-main-color__dark, #00cc14);
+    background: var(--themes-background__dark, #000);
+  }
+
+  .theme-auto .floppy {
+    color: var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .label {
+    -webkit-text-stroke: 1px #000;
+    color: var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .contour {
+    fill: var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .card__like-button:hover .button__text {
+    color: var(--themes-background__dark, #000);
+  }
+
+  .theme-auto .card__like-button::after {
+    background: var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .card__like-button:focus-visible {
+    box-shadow: 2px 2px 0 0 var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .like-icon:hover .core {
+    fill: var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .like-icon.is-liked .core {
+    fill: var(--name-sparks, #ff0000);
+  }
+
+  .theme-auto .like-icon:hover .main-body {
+    fill: var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .like-icon.is-liked .main-body {
+    fill: var(--name-sparks, #ff0000);
+  }
+
+  .theme-auto .floppy__btn:hover .floppy {
+    color: var(--themes-background__dark, #000);
+  }
+
+  .theme-auto .floppy__btn:hover span {
+    color: var(--themes-background__dark, #000);
+  }
+
+  .theme-auto .floppy__btn::after {
+    background: var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .floppy__btn:focus-visible {
+    box-shadow: 2px 2px 0 0 var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .modal {
+    border: 2px solid var(--themes-main-color__dark, #00cc14);
+    background: var(--themes-background__dark, #000);
+  }
+
+  .theme-auto .modal__block {
+    color: var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .text {
+    color: var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .button__ok {
+    color: var(--themes-main-color__dark, #00cc14);
+    border: 2px solid var(--themes-main-color__dark, #00cc14);
+    background: var(--themes-background__dark, #000);
+  }
+
+  .theme-auto .button__ok:focus-visible {
+    box-shadow: 2px 2px 0 0 var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .card__icon-button:focus-visible {
+    outline: 2px solid var(--themes-main-color__dark, #00cc14);
+  }
+
+  @media (width <= 375px) {
+    .theme-auto .card__title {
+      line-height: inherit;
+    }
+
+    .theme-auto .card__text {
+      line-height: 21.5px;
+    }
+  }
+}

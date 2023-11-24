@@ -12,3 +12,228 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+.theme-menu__button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.theme-menu__button:hover::after {
+  transform: scaleX(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.theme-menu__button:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
+  border-bottom: 2px solid;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  font-family: var(--accent-font-family, "Press-Start-2P-Regular", monospace);
+  animation: arrow 0.5s alternate ease-in-out infinite;
+  position: absolute;
+  left: -16px;
+  opacity: 0.6;
+}
+
+.theme-menu__button:disabled.theme-menu__button {
+  opacity: 0.6;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(4px);
+  }
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  transition: 0.3s ease;
+  outline: 2px solid #000;
+}
+
+.card__icon-button:hover {
+  cursor: pointer;
+}
+
+.like-icon .core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
+}
+
+.like-icon:hover .core {
+  fill: var(--themes-main-color, #000);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--name-sparks, #ff0000);
+  transition: fill 0.4s linear;
+}
+
+.like-icon .main-body {
+  fill: transparent;
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--themes-main-color, #000);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon:active .core {
+  fill: var(--name-sparks, #ff0000);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .main-body {
+  fill: var(--themes-main-color, #000);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--name-sparks, #ff0000);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .contour {
+  fill: var(--themes-main-color, #000);
+  transition: fill 0.05s 0.1s linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--name-sparks, #ff0000);
+  transition: fill 0.4s linear;
+}
+
+.like-icon.is-liked .heart {
+  animation: 0.1s 0.3s ease-in change-scale;
+  transform-origin: center;
+}
+
+.like-icon.is-liked .sparks {
+  animation: 0.3s 0.3s ease-in change-opacity;
+  opacity: 1;
+}
+
+@keyframes change-scale {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes change-opacity {
+  0% {
+    opacity: (0);
+  }
+  100% {
+    opacity: (1);
+  }
+}
+
+.card__like-button:hover .button__text {
+  color: var(--themes-background__dark, #fff);
+}
+
+.card__like-button span {
+  position: relative;
+  z-index: 2;
+}
+
+.card__like-button:hover::after {
+  transform: scaleX(1);
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.card__like-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--themes-main-color, #000);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
+}
+
+.card__like-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.card__like-button:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--themes-main-color, #000);
+}
+
+.button__ok:focus {
+  outline: none;
+}
+
+.button__ok:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--themes-main-color, #000);
+}
+
+.floppy__btn span,
+.floppy {
+  position: relative;
+  z-index: 2;
+}
+
+.floppy__btn:hover {
+  color: var(--themes-background__dark, #fff);
+}
+
+.floppy__btn:hover::after {
+  transform: scaleX(1);
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.floppy__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--themes-main-color, #000);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
+}
+
+.floppy__btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.floppy__btn:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--themes-main-color, #000);
+}

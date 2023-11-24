@@ -1,1 +1,10 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main-font-family: 'Inter-Variable', sans-serif;
+    --accent-font-family: 'Press-Start-2P-Regular', monospace;
+    --wdth: 785;
+    --wdth-text: 465;
+    --themes-background__light: #FFF;
+    --themes-main-color: #000;
+    --name-sparks: #FF0000;
+}
