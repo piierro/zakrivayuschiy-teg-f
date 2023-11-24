@@ -23,7 +23,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font-family, "Inter-Variable", sans-serif);
+  font-family: var(--main-font-family, "Inter", sans-serif);
   color: var(--themes-main-color, #000);
   background-color: var(--themes-background__dark, #fff);
   background-attachment: fixed;
