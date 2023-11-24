@@ -14,12 +14,6 @@
 
 */
 
-@supports (font-variation-settings: normal) {
-  body {
-    font-family: "Inter-Variable";
-  }
-}
-
 @supports ((-webkit-text-stroke: 1px #fff)) {
   label {
     -webkit-text-stroke: 1px #fff;
@@ -142,8 +136,7 @@
 }
 
 .filter-five {
-  filter: invert(0.7);
-  filter: saturate(90%);
+  filter: invert(0.7) saturate(90%);
 }
 
 .filter-six {

@@ -53,7 +53,7 @@
 }
 
 .theme-dark .card__title {
-  font-variation-settings: var(--wdth);
+  font-variation-settings: var(--wdth 785);
   color: var(--themes-main-color__dark, #00cc14);
   border-bottom: 2px solid var(--themes-main-color__dark, #00cc14);
   line-height: 125%;
@@ -65,7 +65,7 @@
 
 .theme-dark .card__text {
   color: var(--themes-main-color__dark, #00cc14);
-  font-variation-settings: var(--wdth-text);
+  font-variation-settings: var(--wdth-text 465);
 }
 
 .theme-dark .card__like-button {
@@ -214,7 +214,7 @@
   }
 
   .theme-auto .card__title {
-    font-variation-settings: var(--wdth);
+    font-variation-settings: var(--wdth 785);
     color: var(--themes-main-color__dark, #00cc14);
     border-bottom: 2px solid var(--themes-main-color__dark, #00cc14);
     line-height: 125%;
@@ -226,7 +226,7 @@
 
   .theme-auto .card__text {
     color: var(--themes-main-color__dark, #00cc14);
-    font-variation-settings: var(--wdth-text);
+    font-variation-settings: var(--wdth-text 465);
   }
 
   .theme-auto .card__like-button {
