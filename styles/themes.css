@@ -162,7 +162,7 @@
   color: var(--themes-main-color__dark, #00cc14);
 }
 
-.theme-dark .button__ok:hover .button__text{
+.theme-dark .button__ok:hover .button__text {
   color: var(--themes-main-color__dark, #00cc14);
 }
 
@@ -332,18 +332,15 @@
     outline: 2px solid var(--themes-main-color__dark, #00cc14);
   }
 
-  .theme-auto .floppy__btn:hover .button__text {
+  .theme-auto .floppy__btn:hover .button__text,
+  .floppy {
     color: var(--themes-main-color__dark, #00cc14);
   }
-  
-  .theme-auto .floppy__btn:hover .floppy {
+
+  .theme-auto .button__ok:hover .button__text {
     color: var(--themes-main-color__dark, #00cc14);
   }
-  
-  .theme-auto .button__ok:hover .button__text{
-    color: var(--themes-main-color__dark, #00cc14);
-  }
-  
+
   .theme-auto .button__ok::after {
     background: var(--themes-main-color__dark, #00cc14);
   }
