@@ -16,9 +16,10 @@
 .theme-menu__button:hover {
   cursor: pointer;
   opacity: 0.6;
+  transition: 0.3s ease;
 }
 
-.theme-menu__button:hover::after {
+.theme-menu__button:focus-visible::after {
   transform: scaleX(1);
   transition: transform 0.5s ease-in-out;
 }
@@ -39,15 +40,16 @@
 
 .theme-menu__button:disabled::before {
   content: "▶";
-  font-family: var(--accent-font-family, "Press-Start-2P-Regular", monospace);
+  font-family: var(--accent-font-family, "Press-Start-2P-Regular", fantasy);
   animation: arrow 0.5s alternate ease-in-out infinite;
   position: absolute;
   left: -16px;
   opacity: 0.6;
 }
 
-.theme-menu__button:disabled.theme-menu__button {
+.theme-menu__button:disabled {
   opacity: 0.6;
+  pointer-events: none;
 }
 
 @keyframes arrow {
@@ -124,44 +126,47 @@
 
 .like-icon.is-liked .contour {
   fill: var(--name-sparks, #ff0000);
-  transition: fill 0.4s linear;
+  transition: fill 0.4s 0.1s linear;
 }
 
 .like-icon.is-liked .heart {
-  animation: 0.1s 0.3s ease-in change-scale;
+  animation:  change-scale 0.3s 0.1s ease-in;
   transform-origin: center;
-}
-
-.like-icon.is-liked .sparks {
-  animation: 0.3s 0.3s ease-in change-opacity;
-  opacity: 1;
 }
 
 @keyframes change-scale {
   0% {
-    transform: scale(0.5);
+    transform: scale(1);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1.4);
   }
 }
 
-@keyframes change-opacity {
+.sparks {
+  position: absolute;
+}
+
+.like-icon.is-liked .sparks {
+  animation: change-opacity 0.3s 0.3s ease-in;
+  position: relative;
+}
+
+ @keyframes change-opacity {
   0% {
-    opacity: (0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
-    opacity: (1);
+    opacity: 1;
   }
-}
+} 
 
 .card__like-button:hover .button__text {
   color: var(--themes-background__dark, #fff);
-}
-
-.card__like-button span {
-  position: relative;
-  z-index: 2;
+  mix-blend-mode: difference;
 }
 
 .card__like-button:hover::after {
@@ -201,13 +206,20 @@
 }
 
 .floppy__btn span,
-.floppy {
+.floppy,
+.button__text {
   position: relative;
   z-index: 2;
 }
 
-.floppy__btn:hover {
+.floppy__btn:hover .button__text {
   color: var(--themes-background__dark, #fff);
+  mix-blend-mode: difference;
+}
+
+.floppy__btn:hover .floppy {
+  color: var(--themes-background__dark, #fff);
+  mix-blend-mode: difference;
 }
 
 .floppy__btn:hover::after {
@@ -236,4 +248,30 @@
 
 .floppy__btn:focus-visible {
   box-shadow: 2px 2px 0 0 var(--themes-main-color, #000);
+}
+
+.button__ok:hover .button__text {
+  color: var(--themes-background__dark, #fff);
+  mix-blend-mode: difference;
+  z-index: 2;
+  position: relative;
+}
+
+.button__ok:hover::after {
+  transform: scaleX(1);
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.button__ok::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--themes-main-color, #000);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
 }

@@ -92,7 +92,7 @@
 }
 
 .theme-dark .card__like-button:hover .button__text {
-  color: var(--themes-background__dark, #000);
+  color: var(--themes-main-color__dark, #00cc14);
 }
 
 .theme-dark .card__like-button::after {
@@ -117,14 +117,6 @@
 
 .theme-dark .like-icon.is-liked .main-body {
   fill: var(--name-sparks, #ff0000);
-}
-
-.theme-dark .floppy__btn:hover .floppy {
-  color: var(--themes-background__dark, #000);
-}
-
-.theme-dark .floppy__btn:hover span {
-  color: var(--themes-background__dark, #000);
 }
 
 .theme-dark .floppy__btn::after {
@@ -160,6 +152,22 @@
 
 .theme-dark .card__icon-button:focus-visible {
   outline: 2px solid var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .floppy__btn:hover .button__text {
+  color: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .floppy__btn:hover .floppy {
+  color: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .button__ok:hover .button__text{
+  color: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .button__ok::after {
+  background: var(--themes-main-color__dark, #00cc14);
 }
 
 @media (width <= 375px) {
@@ -253,7 +261,8 @@
   }
 
   .theme-auto .card__like-button:hover .button__text {
-    color: var(--themes-background__dark, #000);
+    color: var(--themes-main-color__dark, #00cc14);
+    mix-blend-mode: difference;
   }
 
   .theme-auto .card__like-button::after {
@@ -321,6 +330,22 @@
 
   .theme-auto .card__icon-button:focus-visible {
     outline: 2px solid var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .floppy__btn:hover .button__text {
+    color: var(--themes-main-color__dark, #00cc14);
+  }
+  
+  .theme-auto .floppy__btn:hover .floppy {
+    color: var(--themes-main-color__dark, #00cc14);
+  }
+  
+  .theme-auto .button__ok:hover .button__text{
+    color: var(--themes-main-color__dark, #00cc14);
+  }
+  
+  .theme-auto .button__ok::after {
+    background: var(--themes-main-color__dark, #00cc14);
   }
 
   @media (width <= 375px) {
