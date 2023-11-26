@@ -107,6 +107,10 @@
   fill: var(--themes-main-color__dark, #00cc14);
 }
 
+.theme-dark .like-icon:active .core {
+  fill: var(--name-sparks, #ff0000);
+} 
+
 .theme-dark .like-icon.is-liked .core {
   fill: var(--name-sparks, #ff0000);
 }
@@ -114,6 +118,10 @@
 .theme-dark .like-icon:hover .main-body {
   fill: var(--themes-main-color__dark, #00cc14);
 }
+
+.theme-dark .like-icon:active .main-body {
+  fill: var(--name-sparks, #ff0000);
+} 
 
 .theme-dark .like-icon.is-liked .main-body {
   fill: var(--name-sparks, #ff0000);
@@ -168,6 +176,14 @@
 
 .theme-dark .button__ok::after {
   background: var(--themes-main-color__dark, #00cc14);
+}
+
+.theme-dark .like-icon:active .contour {
+  fill: var(--themes-main-color__dark, #00cc14);
+}
+
+.thrmr-dark .like-icon.is-liked .contour {
+  fill: var(--themes-main-color__dark, #00cc14);
 }
 
 @media (width <= 375px) {
@@ -277,6 +293,10 @@
     fill: var(--themes-main-color__dark, #00cc14);
   }
 
+  .theme-auto .like-icon:active .core {
+    fill: var(--name-sparks, #ff0000);
+  }
+
   .theme-auto .like-icon.is-liked .core {
     fill: var(--name-sparks, #ff0000);
   }
@@ -286,6 +306,10 @@
   }
 
   .theme-auto .like-icon.is-liked .main-body {
+    fill: var(--name-sparks, #ff0000);
+  }
+
+  .theme-auto .like-icon:active .main-body {
     fill: var(--name-sparks, #ff0000);
   }
 
@@ -332,8 +356,11 @@
     outline: 2px solid var(--themes-main-color__dark, #00cc14);
   }
 
-  .theme-auto .floppy__btn:hover .button__text,
-  .floppy {
+  .theme-auto .floppy__btn:hover .button__text {
+    color: var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .floppy__btn:hover .floppy {
     color: var(--themes-main-color__dark, #00cc14);
   }
 
@@ -343,6 +370,14 @@
 
   .theme-auto .button__ok::after {
     background: var(--themes-main-color__dark, #00cc14);
+  }
+
+  .theme-auto .like-icon:active .contour {
+    fill: var(--themes-main-color__dark, #00cc14);
+  }
+  
+  .thrmr-auto .like-icon.is-liked .contour {
+    fill: var(--themes-main-color__dark, #00cc14);
   }
 
   @media (width <= 375px) {

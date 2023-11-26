@@ -63,6 +63,8 @@ a {
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   font-family: var(--accent-font-family, "Press-Start-2P-Regular", fantasy);
   text-align: center;
+  display: flex;
+   justify-content: center;
 }
 
 .header__subtitle {
@@ -70,7 +72,7 @@ a {
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
   font-family: var(--accent-font-family, "Press-Start-2P-Regular",fantasy);
   text-align: center;
-  margin-top: 44px;
+  margin-top: 43px;
 }
 
 .header__theme-menu {
@@ -301,7 +303,7 @@ dialog::backdrop {
   }
 
   .header__subtitle {
-    margin-top: 31px;
+    margin-top: 30px;
   }
 
   .label {
