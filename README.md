@@ -1,4 +1,4 @@
-# H1Закрывающий Тег
+ЗАКРЫВАЮЩИЙ ТЕГ
 
 https://github.com/piierro/zakrivayuschiy-teg-f.git
 
@@ -16,4 +16,4 @@ https://github.com/piierro/zakrivayuschiy-teg-f.git
 * Flexbox
 * CSS Grid
 
-<img src="https://upload.wikimedia.org/wikipedia/ru/6/6b/NyanCat.gif" width="500">
+<img src="https://upload.wikimedia.org/wikipedia/ru/6/6b/NyanCat.gif" width="900" height="200">
