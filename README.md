@@ -1,4 +1,5 @@
 ЗАКРЫВАЮЩИЙ ТЕГ
+=====================
 
 https://github.com/piierro/zakrivayuschiy-teg-f.git
 
@@ -15,5 +16,3 @@ https://github.com/piierro/zakrivayuschiy-teg-f.git
 * Трансформации
 * Flexbox
 * CSS Grid
-
-<img src="https://upload.wikimedia.org/wikipedia/ru/6/6b/NyanCat.gif" width="200px">
