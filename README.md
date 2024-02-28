@@ -1,6 +1,4 @@
-# H1 Закрывающий Тег
-Alt-H1
-------
+Закрывающий Тег
 
 https://github.com/piierro/zakrivayuschiy-teg-f.git
 
@@ -18,4 +16,4 @@ https://github.com/piierro/zakrivayuschiy-teg-f.git
 * Flexbox
 * CSS Grid
 
-![Иллюстрация к проекту](https://upload.wikimedia.org/wikipedia/ru/6/6b/NyanCat.gif)
+<img src="https://upload.wikimedia.org/wikipedia/ru/6/6b/NyanCat.gif" width="90%">
