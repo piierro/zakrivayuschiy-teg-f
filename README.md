@@ -16,4 +16,4 @@ https://github.com/piierro/zakrivayuschiy-teg-f.git
 * Flexbox
 * CSS Grid
 
-<img src="https://upload.wikimedia.org/wikipedia/ru/6/6b/NyanCat.gif" width="100%">
+<img src="https://upload.wikimedia.org/wikipedia/ru/6/6b/NyanCat.gif" width="100%" height="50%">
